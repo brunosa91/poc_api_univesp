@@ -1,0 +1,18 @@
+
+spring:
+  application:
+
+    name: laboratorio
+  datasource:
+    url: jdbc:mysql://localhost/db_lab
+    username: root
+    password: root
+  jpa:
+    database: mysql
+    hibernate:
+      ddl-auto: create-drop
+    open-in-view: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
